@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FanForm from './FanForm';
+import 'jest-dom/extend-expect';
 import * as rtl from '@testing-library/react';
+
 
 let tools;
 
 beforeEach(() => {
   rtl.cleanup();
-  tool = rtl.render(<FanForm />);
+  tools = rtl.render(<FanForm />);
 });
 
+describe('FanForm test', () => {
+  it('has text', () => {
+    const simulatedDOM = rtl.render(<FanForm/>);
+    const text = simulatedDOM.queryByText(/enter/i);
+    console.log(text);
+  });
 
-describe('Form component', () => {
+})
 
   it('Submit button works', () => {
     const signupButton = tools.queryByTestId('signup');
@@ -31,7 +39,7 @@ describe('Form component', () => {
     expect(emailInput).toContain('@');
   })
 
-})
+ 
 
 
 

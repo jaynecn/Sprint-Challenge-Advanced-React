@@ -1,10 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import useInput from './useInput';
-import * as rtl from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import * as rtl from 'react-testing-library';
+import 'jest-dom/extend-expect';
 
-describe('useInput', () => {
-  it('initalValue has info', () => {
-    initialValue.length > 0;
+let tools;
+
+beforeEach(() => {
+  rtl.cleanup();
+  tools = rtl.render(<useInput />);
+});
+
+it('initalValue has info', () => {
+  initialValue.length > 0;
   })

@@ -17,9 +17,9 @@ const FanForm = () => {
   };
 
   return (
-    <form data-testid="form-input" className="fan-form" onSubmit={resetValues}>
+    <form className="form-input" className="fan-form" onSubmit={resetValues}>
       <input
-        data-testid="name-input"
+        className="name-input"
         name="username"
         onChange={(info) => handleUsername(info.target.value)}
         placeholder="Name"
@@ -34,14 +34,14 @@ const FanForm = () => {
         value={password}
       />
       <input
-        data-testid="email-input"
+        className="email-input"
         name="email"
         onChange={(info) => handleEmail(info.target.value)}
         placeholder="Email"
         type="text"
         value={email}
       />
-      <button data-testid="signup" type="submit">Signup</button>
+      <button className="signup" type="submit">Signup</button>
       {
         email.length > 0
         ? <p>Click the Signup button!</p>
