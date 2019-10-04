@@ -7,8 +7,9 @@ let tools;
 
 beforeEach(() => {
   rtl.cleanup();
-  tools = rtl.render(<FanForm/>);
+  tool = rtl.render(<FanForm />);
 });
+
 
 describe('Form component', () => {
 
@@ -27,8 +28,7 @@ describe('Form component', () => {
 
   it('Email has @ sign', () => {
     const emailInput = tools.queryByTestId('email-input');
-    expect(handleEmail).toContain('@');
-
+    expect(emailInput).toContain('@');
   })
 
 })

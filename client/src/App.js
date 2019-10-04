@@ -17,11 +17,8 @@ export default class App extends React.Component{
 
   componentDidMount() {
     axios.get(playersApi).then(response => {
-      // console.log(response.data);
       const jayne = response.data;
-      // console.log(jayne);
       this.setState({ players: this.state.players.concat(jayne) });
-      console.log(this.state.players);
       });
   }
 
