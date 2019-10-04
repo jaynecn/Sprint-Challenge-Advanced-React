@@ -28,8 +28,8 @@ export default class App extends React.Component{
   
   render(){
     return (
-      <div className="App">
-        <h1>Github Players</h1>
+      <div data-testid="github-players" className="App">
+        <h1 >Github Players</h1>
         <h3>Sign up to become a fan!</h3>
         <FanForm />
         <div className="players-display">
