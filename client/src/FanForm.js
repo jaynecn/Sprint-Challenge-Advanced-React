@@ -34,6 +34,7 @@ const FanForm = () => {
         value={password}
       />
       <input
+        data-testid="email-input"
         name="email"
         onChange={(info) => handleEmail(info.target.value)}
         placeholder="Email"

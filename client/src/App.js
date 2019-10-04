@@ -37,6 +37,7 @@ export default class App extends React.Component{
           this.state.players.map((info) => (
             <div className="players-div" key={info.id}>
               <h2>{info.name}</h2>
+              <h3>ID: {info.id}</h3>
               <h3>Country: {info.country}</h3>
             </div>
           ))
