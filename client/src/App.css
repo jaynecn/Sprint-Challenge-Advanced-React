@@ -31,3 +31,39 @@
     transform: rotate(360deg);
   }
 }
+
+.players-display {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+
+}
+
+.players-div {
+  border: 1px solid blue;
+  padding : 10px;
+  margin: 10px;
+  max-width: 200px;
+}
+
+.fan-form {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: lightgreen;
+
+}
+.fan-form input {
+  padding: 5px;
+  border: 1px solid green;
+  margin-right: 5px;
+}
+
+.fan-form button {
+  padding: 10px 15px;
+  background-color: green;
+  color: white;
+  border: 1px solid white;
+  margin: 5px;
+  border-radius: 10%;
+  
+}
